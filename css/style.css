@@ -7,7 +7,7 @@
   --azul-agua: #158dce;
   --azul-claro: #74b8d6;
   --amarelo-reciclagem: #f9d41a;
-  --marrom-terra: #573827;
+  --marrom-terra: #924a17;
   --branco: #ffffff;
   --cinza-texto: #121717e3;
   --cinza-claro: #dee8ef;
@@ -37,7 +37,7 @@ body {
 
 /* Header & Nav */
 header {
-  background: linear-gradient(135deg, var(--verde-principal) 0%, var(--azul-agua) 100%);
+  background: linear-gradient(135deg, var(--cinza-texto) 0%, var(--azul-agua) 100%);
   color: var(--branco);
   padding: 1rem 0;
   position: sticky;
