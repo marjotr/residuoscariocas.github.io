@@ -1,14 +1,14 @@
 /* Resíduos Cariocas — Educação Ambiental & ODS 12.8 */
 
 :root {
-  --verde-principal: #35b34c;
-  --verde-claro: #e6f8e8;
-  --verde-suave: #a6d5b7;
+  --verde-principal: #bff5d3;
+  --verde-claro: #5fde6e;
+  --verde-suave: #a4c9b2;
   --azul-agua: #158dce;
   --azul-claro: #74b8d6;
   --branco-texto: #eaebead0;
   --amarelo-reciclagem: #f9d41a;
-  --marrom-terra: #924a17;
+  --marrom-terra: #240f00;
   --branco: #ffffff;
   --cinza-texto: #121717e3;
   --cinza-claro: #dee8ef;
@@ -296,11 +296,11 @@ main {
 }
 
 .lixeira-vermelha { background: #c1121f; }
-.lixeira-verde { background: #2d6a4f; }
-.lixeira-amarela { background: #e9c46a; color: var(--cinza-texto); }
-.lixeira-azul { background: #0077b6; }
-.lixeira-marrom { background: #6b4c3b; }
-.lixeira-laranja { background: #e76f51; }
+.lixeira-verde { background: #19583c; }
+.lixeira-amarela { background: #f4de63; color: var(--cinza-texto); }
+.lixeira-azul { background: #0076b6e2; }
+.lixeira-marrom { background: #463024; }
+.lixeira-laranja { background: #fc5f21; }
 
 /* ODS section */
 .ods-section {
