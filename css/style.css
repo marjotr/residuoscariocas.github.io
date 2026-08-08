@@ -6,6 +6,7 @@
   --verde-suave: #a6d5b7;
   --azul-agua: #158dce;
   --azul-claro: #74b8d6;
+  --branco-texto: #eaebead0;
   --amarelo-reciclagem: #f9d41a;
   --marrom-terra: #924a17;
   --branco: #ffffff;
@@ -111,7 +112,7 @@ nav a.ativo {
 
 .hero h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
-  color: var(--verde-principal);
+  color: var(--branco-texto);
   margin-bottom: 1rem;
   max-width: 800px;
   margin-left: auto;
