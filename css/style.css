@@ -1,27 +1,24 @@
 /* Resíduos Cariocas — Educação Ambiental & ODS 12.8 */
 
 :root {
-  --verde-principal: #202b20;
-  --verde-claro: #359540;
-  --verde-suave: #356247;
-  --verde-head:#355f05;
-  --azul-agua: #158dce;
-  --azul-claro: #74b8d6;
-  --azul-head: #246886;
-  --branco-texto: #eaebead0;
-  --amarelo-reciclagem: #f9d41a;
-  --marrom-terra: #240f00;
+  --bg-principal: #faf6fb;          
+  --bg-alternativo: #f2e9f4;        
+  --rosa-suave: #fbebf2;            
   --branco: #ffffff;
-  --cinza-texto: #121717e3;
-  --cinza-claro: #dee8ef;
-  --sombra: 0 4px 20px rgba(45, 106, 79, 0.12);
-  --raio: 12px;
-  --fonte: "Gelasio", serif;
+  --texto-principal: #1f1a24;        
+  --texto-secundario: #5e5466;       
+  --rosa-tech: #d13b7d;              
+  --azul-dados: #1066cc;             
+  --borda-suave: #e2d2e8;            
+  --fonte: "Gelasio", "Times New Roman", Times, Georgia, serif;
+  --sombra: 0 4px 16px rgba(209, 59, 125, 0.06); 
+  --raio: 8px;                                   
 }
 
-*,
-*::before,
-*::after {
+/* ==========================================================================
+   2. RESET GLOBAL & REGRAS TIPOGRÁFICAS
+   ========================================================================== */
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -31,90 +28,108 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: var(--fonte);
-  color: var(--cinza-texto);
-  line-height: 1.7;
-  background: var(--cinza-claro);
+body, h1, h2, h3, h4, h5, h6, p, a, span, li, td, th, caption, strong {
+  font-family: var(--fonte) !important;
+  color: var(--texto-principal);
 }
 
-/* Header & Nav */
+body {
+  line-height: 1.8;
+  background: var(--bg-principal);
+}
+
+/* ==========================================================================
+   3. HEADER & NAVEGAÇÃO HORIZONTAL COLORIDA
+   ========================================================================== */
 header {
-  background: linear-gradient(135deg, var(--cinza-texto) 0%, var(--azul-agua) 100%);
-  color: var(--branco);
+  background-color: var(--branco);
   padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  border-bottom: 3px solid var(--rosa-tech) !important; 
   box-shadow: var(--sombra);
+  width: 100%;
 }
 
 .header-inner {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  display: flex !important;       
+  flex-direction: row !important;  
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1.5rem;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
   gap: 0.6rem;
   text-decoration: none;
-  color: var(--branco);
+  flex-shrink: 0;                  
 }
 
 .logo-icon {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 .logo-text h1 {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
+  margin: 0;
+  color: var(--rosa-tech) !important;
 }
 
 .logo-text span {
   font-size: 0.75rem;
-  opacity: 0.9;
+  color: var(--texto-secundario) !important;
+  margin: 0;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 1.25rem;
+  list-style: none !important;
+  display: flex !important;        
+  flex-direction: row !important;  
+  align-items: center !important;
+  flex-wrap: nowrap !important;    
+  gap: 0.5rem;                     
 }
 
 nav a {
-  color: var(--branco);
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: 500;
-  font-size: 0.95rem;
-  padding: 0.35rem 0.5rem;
-  border-radius: 6px;
-  transition: background 0.2s;
+  font-size: 0.85rem;              
+  color: var(--texto-secundario) !important;
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--raio);
+  white-space: nowrap !important;  
+  transition: all 0.2s ease-in-out;
 }
 
-nav a:hover,
-nav a.ativo {
-  background: rgba(255, 255, 255, 0.2);
+nav a:hover, nav a.ativo {
+  color: var(--rosa-tech) !important;
+  background-color: var(--rosa-suave) !important; 
+  font-weight: 600;
 }
 
-/* Hero */
+/* ==========================================================================
+   4. HERO GRADIENTE & ESTRUTURA PRINCIPAL
+   ========================================================================== */
 .hero {
-  background: linear-gradient(160deg, var(--verde-suave) 0%, var(--azul-head) 50%, var(--verde-head) 100%);
-  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #f2e9f4 0%, #fbebf2 100%);  
+  border-bottom: 1px solid var(--borda-suave);
+  padding: 5.5rem 1.5rem;
   text-align: center;
 }
 
 .hero h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
-  color: var(--branco-texto);
+  color: var(--rosa-tech) !important;             
   margin-bottom: 1rem;
   max-width: 800px;
   margin-left: auto;
@@ -122,10 +137,10 @@ nav a.ativo {
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   max-width: 650px;
   margin: 0 auto 1.5rem;
-  color: var(--marrom-terra);
+  color: var(--texto-secundario) !important;
 }
 
 .ods-badge {
@@ -133,13 +148,13 @@ nav a.ativo {
   align-items: center;
   gap: 0.5rem;
   background: var(--branco);
-  color: var(--verde-principal);
+  color: var(--azul-dados) !important;
   padding: 0.5rem 1.25rem;
-  border-radius: 50px;
+  border-radius: var(--raio);
   font-weight: 600;
   font-size: 0.9rem;
   box-shadow: var(--sombra);
-  border: 2px solid var(--amarelo-reciclagem);
+  border: 1px solid var(--rosa-tech); 
 }
 
 /* Layout */
@@ -151,227 +166,526 @@ main {
 
 .page-title {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--verde-principal);
+  color: var(--rosa-tech) !important;
   margin-bottom: 0.5rem;
-  border-left: 5px solid var(--amarelo-reciclagem);
+  border-left: 5px solid var(--azul-dados) !important; 
   padding-left: 1rem;
 }
 
 .page-subtitle {
-  color: var(--marrom-terra);
+  color: var(--texto-secundario) !important;
   margin-bottom: 2rem;
   font-size: 1.05rem;
+  font-style: italic;
 }
 
-/* Cards grid */
+/* ==========================================================================
+   5. CARDS GERAIS COLORIDOS
+   ========================================================================== */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+  gap: 1.5rem !important;
+  margin: 2.5rem 0 !important;
 }
 
 .card {
-  background: var(--branco);
-  border-radius: var(--raio);
-  padding: 1.75rem;
-  box-shadow: var(--sombra);
-  transition: transform 0.2s, box-shadow 0.2s;
-  border-top: 4px solid var(--verde-claro);
+  background-color: var(--branco) !important;
+  border-radius: var(--raio) !important;
+  padding: 1.75rem !important;
+  box-shadow: var(--sombra) !important;
+  border: 1px solid var(--borda-suave) !important;
+  border-top: 4px solid var(--rosa-tech) !important; 
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(47, 146, 102, 0.18);
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(209, 59, 125, 0.12) !important; 
 }
 
 .card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.5rem !important;
+  margin-bottom: 0.75rem !important;
+  display: block !important;
+  filter: drop-shadow(0 2px 4px rgba(209, 59, 125, 0.15));
 }
 
 .card h3 {
-  color: var(--verde-principal);
-  margin-bottom: 0.5rem;
-  font-size: 1.15rem;
+  color: var(--rosa-tech) !important;
+  margin-bottom: 0.6rem !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
 }
 
 .card p {
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
+  font-size: 0.95rem !important;
+  margin-bottom: 1.2rem !important;
+  color: var(--texto-secundario) !important;
+  line-height: 1.6 !important;
 }
 
 .card a {
-  color: var(--azul-agua);
-  font-weight: 600;
-  text-decoration: none;
+  color: var(--azul-dados) !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  margin-top: auto !important; 
 }
 
 .card a:hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 /* Content sections */
 .content-section {
-  background: var(--branco);
-  border-radius: var(--raio);
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: var(--sombra);
+  background-color: var(--branco) !important;
+  border-radius: var(--raio) !important;
+  padding: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
+  box-shadow: var(--sombra) !important;
+  border: 1px solid var(--borda-suave) !important;
+}
+
+.content-section:nth-of-type(even) {
+  background-color: var(--rosa-suave) !important; 
 }
 
 .content-section h3 {
-  color: var(--verde-principal);
-  margin: 1.5rem 0 0.75rem;
-  font-size: 1.2rem;
+  color: var(--azul-dados) !important; 
+  margin: 1.5rem 0 0.75rem !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
 }
 
 .content-section h3:first-child {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
-.content-section p,
-.content-section li {
-  margin-bottom: 0.75rem;
+.content-section p, .content-section li {
+  margin-bottom: 0.8rem !important;
+  color: var(--texto-principal) !important;
 }
 
-.content-section ul,
-.content-section ol {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+.content-section ul, .content-section ol {
+  margin-left: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .highlight-box {
-  background: var(--verde-suave);
-  border-left: 4px solid var(--verde-principal);
-  padding: 1.25rem 1.5rem;
-  border-radius: 0 var(--raio) var(--raio) 0;
-  margin: 1.5rem 0;
+  background: linear-gradient(90deg, var(--bg-alternativo) 0%, var(--branco) 100%) !important;
+  border-left: 4px solid var(--rosa-tech) !important;
+  padding: 1.25rem 1.5rem !important;
+  border-radius: 0 var(--raio) var(--raio) 0 !important;
+  margin: 1.5rem 0 !important;
+  font-style: italic !important;
 }
 
 .highlight-box strong {
-  color: var(--verde-principal);
+  color: var(--rosa-tech) !important;
 }
 
+/* ==========================================================================
+   6. PAINÉIS DE CIÊNCIA DE DADOS (info-grid)
+   ========================================================================== */
 .info-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 1.25rem !important;
+  margin: 2.5rem 0 !important;
 }
 
 .info-item {
-  background: var(--cinza-claro);
-  padding: 1.25rem;
-  border-radius: var(--raio);
-  text-align: center;
+  background-color: var(--branco) !important;
+  padding: 1.5rem !important;
+  border-radius: var(--raio) !important;
+  border: 1px solid var(--rosa-tech) !important; 
+  box-shadow: var(--sombra) !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
 }
 
 .info-item .numero {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--azul-agua);
-  display: block;
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  color: var(--rosa-tech) !important; 
+  display: block !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.4rem !important;
 }
 
 .info-item .rotulo {
-  font-size: 0.85rem;
-  color: var(--marrom-terra);
+  font-size: 0.85rem !important;
+  color: var(--texto-secundario) !important;
+  line-height: 1.4 !important;
 }
 
-/* Tabela de cores de lixeiras */
-.lixeiras {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1.5rem 0;
-}
-
-.lixeira {
-  flex: 1 1 140px;
-  padding: 1rem;
-  border-radius: var(--raio);
-  text-align: center;
-  color: var(--branco);
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.lixeira-vermelha { background: #c1121f; }
-.lixeira-verde { background: #19583c; }
-.lixeira-amarela { background: #f4de63; color: var(--cinza-texto); }
-.lixeira-azul { background: #0076b6e2; }
-.lixeira-marrom { background: #463024; }
-.lixeira-laranja { background: #fc5f21; }
-.lixeira-infectante {background: #e4e2e2}
-.lixeira-nao {background: #f8f7f74e}
-
-/* ODS section */
 .ods-section {
-  background: linear-gradient(135deg, var(--verde-principal), var(--azul-agua));
-  color: var(--branco);
-  border-radius: var(--raio);
-  padding: 2.5rem;
-  margin: 2rem 0;
-  text-align: center;
+  background: linear-gradient(135deg, #f2e9f4 0%, var(--rosa-suave) 100%) !important;
+  color: var(--texto-principal) !important;
+  border: 1px solid var(--borda-suave) !important;
+  border-radius: var(--raio) !important;
+  padding: 2.5rem !important;
+  margin: 2.5rem 0 !important;
+  text-align: center !important;
 }
 
 .ods-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  color: var(--rosa-tech) !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+  font-weight: 700 !important;
 }
 
 .ods-section p {
-  max-width: 700px;
-  margin: 0 auto 1rem;
-  opacity: 0.95;
+  max-width: 700px !important;
+  margin: 0 auto 1rem !important;
+  color: var(--texto-secundario) !important;
 }
 
 .ods-meta {
-  display: inline-block;
-  background: var(--amarelo-reciclagem);
-  color: var(--cinza-texto);
-  padding: 0.4rem 1rem;
-  border-radius: 6px;
-  font-weight: 700;
-  margin-top: 0.5rem;
+  display: inline-block !important;
+  background-color: var(--azul-dados) !important; 
+  color: var(--branco) !important;        
+  padding: 0.5rem 1.25rem !important;
+  border-radius: var(--raio) !important;  
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.5px !important;
+  margin-top: 0.5rem !important;
 }
 
-/* Footer */
-footer {
-  background: var(--verde-principal);
-  color: var(--branco);
-  text-align: center;
-  padding: 2rem 1.5rem;
-  margin-top: 2rem;
+/* ==========================================================================
+   7. COMPONENTES ACADÊMICOS AVANÇADOS
+   ========================================================================== */
+.secao-academica {
+  padding: 40px 0;
+  max-width: 100%;
 }
 
-footer p {
+.secao-academica h2 {
+  color: var(--rosa-tech) !important;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--borda-academica);
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.secao-academica p {
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.tabela-container { margin: 25px 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+ background-color: var(--branco);
+  box-shadow: var(--sombra);
+  border: 1px solid var(--borda-suave);
+}
+
+caption {
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 8px;
   font-size: 0.9rem;
-  opacity: 0.9;
-  margin-bottom: 0.35rem;
+  color: var(--texto-secundario) !important;
 }
 
-footer a {
-  color: var(--amarelo-reciclagem);
+th {
+  background-color: var(--rosa-tech) !important;
+  color: var(--branco) !important;
+  padding: 12px 15px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
-/* Responsive */
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--borda-suave);
+  font-size: 0.95rem;
+}
+
+tr:nth-child(even) { 
+  background-color: var(--bg-principal); 
+}
+
+.fonte-academica {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--texto-secundario) !important;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.cards-intervencao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.card-proposta {
+  background-color: var(--branco);
+  border: 1px solid var(--borda-suave);
+  border-top: 4px solid var(--azul-dados) !important;
+  padding: 22px;
+  border-radius: var(--raio);
+  position: relative;
+  box-shadow: var(--sombra);
+}
+
+.card-numero {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: rgba(16, 102, 204, 0.12) !important;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  user-select: none;
+}
+
+.card-proposta h4, 
+.card-proposta h3 {
+  color: var(--rosa-tech) !important;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.card-proposta p {
+  color: var(--texto-secundario) !important;
+  font-size: 0.95rem;
+  text-indent: 0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================================================================
+   8. MATRIZ DE LIXEIRAS COM IMAGENS (Visual Clean Otimizado)
+   ========================================================================== */
+.lixeiras-container-tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.card-lixeira {
+  background-color: var(--branco);
+  border: 1px solid var(--borda-suave);
+  border-radius: var(--raio);
+  padding: 1.25rem;
+  box-shadow: var(--sombra);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-lixeira:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(162, 75, 122, 0.06);
+}
+
+.lixeira-corpo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.lixeira-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.lixeira-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.lixeira-header h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--texto-principal) !important;
+}
+
+.lixeira-descricao {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--texto-secundario) !important;
+  margin: 0;
+}
+
+.badge-cor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.lixeira-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Cores das Bordas Laterais de Metadados Mapeados */
+.border-vermelha   { border-left: 5px solid #c1121f !important; }
+.bg-vermelha       { background-color: #c1121f; }
+
+.border-verde      { border-left: 5px solid #19583c !important; }
+.bg-verde          { background-color: #19583c; }
+
+.border-amarela    { border-left: 5px solid #e0c21b !important; }
+.bg-amarela        { background-color: #f4de63; }
+
+.border-azul       { border-left: 5px solid #0076b6 !important; }
+.bg-azul           { background-color: #0076b6; }
+
+.border-marrom     { border-left: 5px solid #463024 !important; }
+.bg-marrom         { background-color: #463024; }
+
+.border-laranja    { border-left: 5px solid #fc5f21 !important; }
+.bg-laranja        { background-color: #fc5f21; }
+
+.border-infectante { border-left: 5px solid #9e9ba6 !important; }
+.bg-infectante     { background-color: #d1ced7; }
+
+.border-nao        { border-left: 5px solid #495057 !important; }
+.bg-nao            { background-color: #adb5bd; }
+
+/* ==========================================================================
+   9. REFERÊNCIAS E SUPER RODAPÉ (Contraste Máximo)
+   ========================================================================== */
+.referencias-abnt ul { 
+  list-style: none !important; 
+  padding: 0; 
+  margin: 20px 0; 
+}
+
+.referencias-abnt li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: var(--texto-principal) !important;
+}
+
+body footer, 
+html body footer, 
+main + footer, 
+div + footer, 
+footer, 
+footer p, 
+footer p *, 
+footer a, 
+footer strong {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+footer {
+  background-color: var(--rosa-tech) !important;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  margin-top: 4rem;
+  width: 100%;
+  display: block;
+}
+
+footer p { 
+  font-size: 0.95rem !important; 
+  margin-bottom: 0.6rem !important; 
+}
+
+footer a { 
+  text-decoration: underline !important; 
+  font-weight: 600; 
+  display: inline-block; 
+}
+
+footer a:hover { 
+  opacity: 0.85 !important; 
+}
+
+/* ==========================================================================
+   10. RESPONSIVIDADE E ADAPTAÇÃO DE DISPOSITIVOS
+   ========================================================================== */
+@media (max-width: 992px) {
+  .header-inner { 
+    flex-direction: column !important; 
+    text-align: center; 
+    gap: 1rem; 
+  }
+  
+  nav ul { 
+    flex-wrap: wrap !important; 
+    justify-content: center !important; 
+    gap: 0.5rem; 
+  }
+}
+
 @media (max-width: 600px) {
-  .header-inner {
-    flex-direction: column;
-    text-align: center;
+  .hero { 
+    padding: 3rem 1rem; 
   }
+  
+  .content-section { 
+    padding: 1.5rem; 
+  }
+}
+/* ==========================================================================
+   BLINDAGEM DO RODAPÉ CONJUNTO (Marjorie - Unidombosco)
+   ========================================================================== */
+#rodape-marjorie-unidombosco {
+  background-color: #d13b7d !important; /* Seu Rosa Magenta Digital de destaque */
+  text-align: center !important;
+  padding: 3rem 1.5rem !important;
+  margin-top: 4rem !important;
+  width: 100% !important;
+  display: block !important;
+  clear: both !important; /* Força o rodapé a ir para o final absoluto da página */
+  box-sizing: border-box !important;
+}
 
-  nav ul {
-    justify-content: center;
-  }
+/* Força absolutamente todos os textos internos a ficarem brancos e legíveis */
+#rodape-marjorie-unidombosco,
+#rodape-marjorie-unidombosco p,
+#rodape-marjorie-unidombosco strong,
+#rodape-marjorie-unidombosco a,
+#rodape-marjorie-unidombosco * {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  text-fill-color: #ffffff !important;
+  font-family: "Gelasio", "Times New Roman", serif !important;
+}
 
-  .hero {
-    padding: 2.5rem 1rem;
-  }
+#rodape-marjorie-unidombosco p.linha-footer {
+  font-size: 0.95rem !important;
+  margin-bottom: 0.6rem !important;
+  line-height: 1.4 !important;
+}
 
-  .content-section {
-    padding: 1.25rem;
-  }
+#rodape-marjorie-unidombosco a {
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+  display: inline-block !important;
+}
+
+#rodape-marjorie-unidombosco a:hover {
+  opacity: 0.85 !important;
 }

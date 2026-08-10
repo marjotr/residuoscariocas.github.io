@@ -11,23 +11,25 @@
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">♻️</span>
-        <div class="logo-text">
-          <h1>Resíduos Cariocas</h1>
-          <span>Educação Ambiental · ODS 12.8</span>
-        </div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="residuos-urbanos.html" class="ativo">Resíduos Urbanos</a></li>
-          <li><a href="reciclagem-rj.html">Reciclagem no Rio</a></li>
-          <li><a href="educacao-ambiental.html">Educação Ambiental</a></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="header-inner"> <!-- Essa div é obrigatória para o menu ficar na horizontal! -->
+    <a href="index.html" class="logo">
+      <span class="logo-icon">♻️</span>
+      <div class="logo-text">
+        <h1>Resíduos Cariocas</h1>
+        <span>Educação Ambiental · ODS 12.8</span>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="residuos-urbanos.html">Resíduos Urbanos</a></li>
+        <li><a href="reciclagem-rj.html">Reciclagem no Rio</a></li>
+        <li><a href="educacao-ambiental.html">Educação Ambiental</a></li>
+        <li><a href="educacao-ambiental.html#metodologia-indicadores">Metodologia & Indicadores</a></li>
+        <li><a href="educacao-ambiental.html#propostas-intervencao">Propostas de Intervenção</a></li>
+      </ul>
+    </nav>
+  </div>
   </header>
 
   <section class="hero">
@@ -44,7 +46,7 @@
         <strong>Resíduos sólidos urbanos (RSU)</strong> são materiais, substâncias ou objetos descartados, tais como restos de comida,
         plásticos, papéis e entulhos, gerados pelas atividades humanas no ambiente urbano. 
         No Rio de Janeiro, o impacto urbano, por sua vez, envolve a poluição de lagoas e da Baía de Guanabara,
-        o risco de inundações e a pressão sobre os aterros. 
+        o risco de inundações e a pressão sobre os aterros sanitários municipais. 
       </p>
 
       <h3>Principais fontes de geração no Rio</h3>
@@ -54,59 +56,79 @@
         <li><strong>Comércio e serviços:</strong> inclui-se a gestão de embalagens, papéis e resíduos provenientes de estabelecimentos comerciais.</li>
         <li><strong>Construção civil:</strong> utilizando materiais como entulho, concreto e resíduos de reformas, é um campo de estudo relevante 
           para a análise de cidades em processo contínuo de urbanização.</li>
-        <li><strong>Eventos e turismo:</strong> possível identificar picos sazonais durante festividades como o Réveillon e o Carnaval.</li>
-        <li><strong>Órgãos públicos e saúde:</strong> há normas de descarte próprias para cada tipo de material.</li>
+        <li><strong>Eventos e turismo:</strong> é possível identificar picos sazonais expressivos durante festividades tradicionais como o Réveillon e o Carnaval [Comlurb].</li>
+        <li><strong>Órgãos públicos e saúde:</strong> materiais que demandam normas específicas de triagem e descarte conforme regulação sanitária.</li>
       </ul>
 
       <div class="highlight-box">
-        <strong>Dado importante:</strong> Estimativas apontam para uma produção diária de aproximadamente 10 mil toneladas de resíduos na Região Metropolitana do Rio.
-         Em caso de ausência de uma gestão adequada, há a possibilidade de contaminação dos solos, rios, manguezais e praias, que constituem patrimônios naturais 
-         e definem a identidade da região carioca.
+        <strong>Dado importante:</strong> Estimativas oficiais apontam para uma produção diária de aproximadamente 10 mil toneladas de resíduos coletados pela Comlurb na cidade do Rio de Janeiro [Comlurb]. Na ausência de uma gestão e destinação adequadas, há a contaminação direta dos solos, rios, manguezais e praias que constituem patrimônios naturais e definem a identidade carioca.
       </div>
     </div>
 
     <div class="content-section">
       <h3>Composição típica do lixo domiciliar</h3>
-      <p>O lixo que produzimos em casa pode ser dividido em categorias:</p>
+      <p>O lixo que produzimos em casa pode ser dividido em categorias gerais estimadas para capitais brasileiras:</p>
       <ul>
-        <li><strong>Orgânicos (≈50–60%):</strong> resíduos alimentares, cascas e podas de árvores podem ser utilizados na produção de compostagem.</li>
-        <li><strong>Recicláveis (≈25–30%):</strong>incluem papel, plástico, metal e vidro.</li>
-        <li><strong>Rejeitos (≈15–20%):</strong>fraldas e absorventes, bem como espelhos quebrados, devem ser destinados ao aterro sanitário.</li>
-        <li><strong>Perigosos:</strong> pilhas, baterias e medicamentos com prazo de validade expirado demanda uma atenção especial.</li>
+        <li><strong>Orgânicos (≈50–60%):</strong> resíduos alimentares, cascas e podas de árvores que podem ser totalmente aproveitados na produção de compostagem.</li>
+        <li><strong>Recicláveis (≈25–30%):</strong> incluem materiais secos como papel, plástico, metal e vidro [Firjan].</li>
+        <li><strong>Rejeitos (≈15–20%):</strong> itens descartáveis de higiene pessoal (como fraldas e absorventes usados) e fitas adesivas que precisam ser destinados ao aterro sanitário.</li>
+        <li><strong>Perigosos:</strong> pilhas, baterias e medicamentos com prazo de validade expirado demandam logística reversa e atenção especial.</li>
       </ul>
 
       <h3>Desafios específicos do Rio de Janeiro</h3>
       <ol>
-        <li><strong>Desigualdade territorial:</strong> a regularidade da coleta de resíduos sólidos em áreas periféricas e comunidades de baixa renda é um desafio constante.</li>
-        <li><strong>Descarte irregular:</strong> A deposição de resíduos sólidos em áreas não apropriadas, tais como encostas, rios e terrenos baldios, 
-          constitui uma prática que afeta a qualidade do meio ambiente e a saúde pública.</li>
-        <li><strong>Baixa taxa de reciclagem:</strong> Apenas uma parcela reduzida do lixo é submetida ao processo de reciclagem.</li>
-        <li><strong>Dependência de aterros:</strong> Os aterros sanitários de Jardim Gramacho e de Seropédica, este último fechado em 2012, concentram um grande volume de resíduos.</li>
-        <li><strong>Conscientização insuficiente:</strong> A separação inadequada de resíduos sólidos por parte de muitos residentes do Rio de Janeiro persiste.</li>
+        <li><strong>Desigualdade territorial:</strong> a regularidade da coleta seletiva e do manejo de resíduos em áreas periféricas e comunidades de baixa renda ainda é desafiadora.</li>
+        <li><strong>Descarte irregular:</strong> a deposição de resíduos sólidos em encostas, rios e terrenos baldios afeta gravemente a qualidade ambiental e a saúde coletiva.</li>
+        <li><strong>Baixa taxa de reciclagem:</strong> apenas cerca de 11% do potencial total de materiais recicláveis gerados na capital passa efetivamente por triagem [Comlurb, Firjan].</li>
+        <li><strong>Dependência de aterros:</strong> após o encerramento do Aterro de Jardim Gramacho em 2012, o volume principal é destinado ao Centro de Tratamento de Resíduos (CTCR) de Seropédica [Comlurb].</li>
+        <li><strong>Conscientização insuficiente:</strong> a falta de informação clara sobre a separação correta na origem reduz a eficiência da cadeia de reciclagem [Ipea].</li>
       </ol>
     </div>
 
     <div class="content-section">
       <h3>Impactos ambientais e sociais</h3>
       <p>A gestão inadequada de resíduos sólidos é responsável por diversos problemas ambientais, incluindo a poluição visual, 
-        a emissão de gases de efeito estufa (como o metano em aterros sanitários), além da contaminação de lençóis freáticos 
-        e da proliferação de vetores de doenças, como o mosquito da dengue. Ademais, os catadores de materiais recicláveis, 
+        a emissão de gases de efeito estufa (como o metano em aterros), além da contaminação de lençóis freáticos 
+        e da proliferação de vetores de doenças. Ademais, os catadores de materiais recicláveis, 
         que desempenham um papel fundamental na cadeia de reciclagem, enfrentam condições precárias na ausência de políticas de 
-        inclusão e valorização.
+        inclusão e valorização [Comlurb].
       </p>
       <p>
         A educação ambiental constitui um mecanismo de articulação entre o conhecimento técnico acerca dos resíduos e a 
-        transformação dos padrões comportamentais na vida cotidiana dos cariocas, conforme 
-        a Meta 12.8 dos Objetivos de Desenvolvimento Sustentável (ODS).
-        <a href="educacao-ambiental.html#ods">Meta 12.8 das ODS</a>.
+        transformação dos padrões comportamentais na vida cotidiana dos cariocas, operando em perfeita consonância com as premissas estabelecidas pela 
+        <a href="educacao-ambiental.html#ods">Meta 12.8 dos Objetivos de Desenvolvimento Sustentável (ODS)</a> [Ipea].
       </p>
     </div>
+
+    <!-- SEÇÃO DE REFERÊNCIAS BIBLIOGRÁFICAS (ABNT) -->
+    <section id="referencias" class="referencias-abnt">
+      <h3>Referências</h3>
+      <ul>
+        <li>
+          COMPANHIA MUNICIPAL DE LIMPEZA URBANA (COMLURB). <strong>Histórico da Coleta Seletiva no Município do Rio de Janeiro</strong>. Rio de Janeiro: Prefeitura do Rio de Janeiro, 2026. Disponível em: &lt;https://prefeitura.rio&gt;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          FEDERAÇÃO DAS INDÚSTRIAS DO ESTADO DO RIO DE JANEIRO (FIRJAN). <strong>Mapeamento de Recicláveis Pós-Consumo do Estado do Rio de Janeiro</strong>. Rio de Janeiro: Firjan, 2023. Disponível em: &lt;https://firjan.com.br&gt;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). <strong>Objetivos de Desenvolvimento Sustentável:</strong> ODS 12 - Consumo e Produção Responsáveis (Meta 12.8). Brasília: Ipea, 2024. Disponível em: &lt;https://ipea.gov.br;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Assegurar padrões de produção e de consumo sustentáveis:</strong> Meta 12.8. Nova York: ONU, 2015. Disponível em: &lt;https://brasil.un.org&gt;. Acesso em: 10 ago. 2026.
+        </li>
+      </ul>
+    </section>
   </main>
 
-  <footer>
-    <p>Trabalho Acadêmico — Resíduos Urbanos e Educação Ambiental na Sociedade Carioca</p>
-    <p>Tema: ODS 12.8 — Consumo e Produção Responsáveis</p>
-    <p><a href="https://sdgs.un.org/goals/goal12" target="_blank" rel="noopener">Saiba mais sobre a ODS 12 na ONU</a></p>
-  </footer>
+<!-- SEÇÃO DE FECHAMENTO CONJUNTO REGULAMENTAR -->
+<footer id="rodape-marjorie-unidombosco">
+  <p class="linha-footer">Trabalho Acadêmico — Resíduos Urbanos e Educação Ambiental na Sociedade Carioca</p>
+  <p class="linha-footer"><strong>Desenvolvido por: Marjorie Toledo Rodrigues</strong> · Estudante de Ciência de Dados e Inteligência Artificial</p>
+  <p class="linha-footer">Centro Universitário Unidombosco</p>
+  <p class="linha-footer">Tema: ODS 12.8 — Consumo e Produção Responsáveis</p>
+  <p class="linha-footer" style="margin-bottom: 0 !important;">
+    <a href="https://un.org" target="_blank" rel="noopener">Saiba mais sobre a ODS 12 na ONU</a>
+  </p>
+</footer>
 </body>
 </html>

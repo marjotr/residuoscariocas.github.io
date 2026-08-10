@@ -11,29 +11,31 @@
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">♻️</span>
-        <div class="logo-text">
-          <h1>Resíduos Cariocas</h1>
-          <span>Educação Ambiental · ODS 12.8</span>
-        </div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="residuos-urbanos.html">Resíduos Urbanos</a></li>
-          <li><a href="reciclagem-rj.html" class="ativo">Reciclagem no Rio</a></li>
-          <li><a href="educacao-ambiental.html">Educação Ambiental</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="header-inner"> <!-- Essa div é obrigatória para o menu ficar na horizontal! -->
+    <a href="index.html" class="logo">
+      <span class="logo-icon">♻️</span>
+      <div class="logo-text">
+        <h1>Resíduos Cariocas</h1>
+        <span>Educação Ambiental · ODS 12.8</span>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="residuos-urbanos.html">Resíduos Urbanos</a></li>
+        <li><a href="reciclagem-rj.html">Reciclagem no Rio</a></li>
+        <li><a href="educacao-ambiental.html">Educação Ambiental</a></li>
+        <li><a href="educacao-ambiental.html#metodologia-indicadores">Metodologia & Indicadores</a></li>
+        <li><a href="educacao-ambiental.html#propostas-intervencao">Propostas de Intervenção</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>  
 
   <section class="hero">
     <h2>Sistema de Reciclagem no Rio de Janeiro</h2>
     <p>A coleta seletiva, a implantação de ecopontos, a atuação de cooperativas e a infraestrutura que 
-      transforma resíduos em recursos constituem medidas fundamentais para a gestão adequada do descarte de resíduos sólidos.</p>
+      transforma resíduos em recursos constituem medidas fundamentais para a gestão adequada do descarte de resíduos sólidos [Comlurb].</p>
   </section>
 
   <main>
@@ -44,14 +46,14 @@
       <h3>A Comlurb e a gestão de resíduos</h3>
       <p>
         A <strong>Companhia Municipal de Limpeza Urbana (Comlurb)</strong> é a instituição responsável pelo manejo dos
-       resíduos sólidos no município do Rio de Janeiro, abrangendo a coleta, o transporte e a destinação final. 
+        resíduos sólidos no município do Rio de Janeiro, abrangendo a coleta, o transporte e a destinação final [Comlurb]. 
         Fundada em 1976, a empresa atende a uma população de milhões de habitantes e opera diariamente com o objetivo de manter a cidade limpa.
       </p>
       <p>
         Após o encerramento das atividades do Aterro Sanitário de Jardim Gramacho, em 2012, 
         um dos maiores depósitos de resíduos da América Latina, os resíduos passaram a ser 
         destinados principalmente ao Centro de Tratamento e Comercialização de Resíduos (CTCR) de Seropédica,
-       em parceria com a concessionária CMR.
+        em parceria com a concessionária CMR.
       </p>
     </div>
 
@@ -63,99 +65,194 @@
         gradual, com cobertura variável entre bairros.
       </p>
       <ul>
-        <li><strong>Coleta porta a porta:</strong> caminhões específicos recolhem recicláveis em dias programados.</li>
+        <li><strong>Coleta porta a porta:</strong> caminhões específicos recolhem recicláveis em dias programados [Comlurb].</li>
         <li><strong>Coleta em ecopontos:</strong> pontos fixos onde moradores depositam materiais separados.</li>
         <li><strong>Coleta em condomínios e empresas:</strong> parcerias com síndicos e gestores ambientais.</li>
       </ul>
 
       <div class="highlight-box">
-        <strong>Desafio atual:</strong> Apenas cerca de 4% do lixo produzido no Rio é 
-        efetivamente reciclado. Ampliar a coleta seletiva e a participação da população 
-        são metas centrais das políticas ambientais municipais.
+        <strong>Desafio atual:</strong> Embora o potencial de aproveitamento de secos seja amplo, a coleta seletiva formal no município recolhe cerca de 5.700 toneladas mensais, o que representa aproximadamente 11% do potencial reciclável gerado [Comlurb, Firjan]. Ampliar a participação da população é meta central para o cumprimento local da ODS 12.8 [Ipea].
       </div>
     </div>
 
-    <div class="content-section">
-      <h3>Separar corretamente: cores das lixeiras</h3>
-      <p>O sistema de cores facilita a identificação do tipo de resíduo:</p>
-      <div class="lixeiras">
-        <div class="lixeira lixeira-vermelha"><img src="plasticos.png"><strong>Plástico</strong><br>Garrafas PET, sacolas, embalagens</div>
-        <div class="lixeira lixeira-verde"><img src="vidros.png"><strong>Vidro</strong><br>Garrafas, pote e copos</div>
-        <div class="lixeira lixeira-amarela"><img src="metal.png"><strong>Metal</strong><br>Latas de alumínio, tampas, arames</div>
-        <div class="lixeira lixeira-azul"><img src="papel.png"><strong>Papel e papelão</strong><br>Jornais, revistas, caixas</div>
-        <div class="lixeira lixeira-marrom"><img src="organicos.png"><strong>Resíduos Orgânicos</strong><br>Restos de comida, cascas de frutas</div>
-        <div class="lixeira lixeira-laranja"><img src="pilhas.png"><strong>Perigosos</strong><br>Pilhas e baterias.</div>
-        <div class="lixeira lixeira-infectante" style="color: rgb(0, 0, 0)"><img src="infectante.png"><strong>Infectante</strong><br>Resíduos de serviços de saúde com risco biológico potencial.</div>
-        <div class="lixeira lixeira-nao" style="color: rgb(35, 35, 35)"><img src="naoreciclavel.png"><br><strong>Não Recicláveis:</strong><br>Papéis sujos, alguns plásticos misturados, vidros especiais e restos de comida</div>
+<div class="lixeiras-container-tech">
+  
+  <!-- Categoria: Plástico -->
+  <div class="card-lixeira border-vermelha">
+    <div class="lixeira-corpo">
+      <div class="lixeira-texto">
+        <div class="lixeira-header">
+          <span class="badge-cor bg-vermelha"></span>
+          <h4>Plástico</h4>
+        </div>
+        <p class="lixeira-descricao">Garrafas PET, sacolas, copos descartáveis e embalagens diversas.</p>
       </div>
-      <p><em>Nota: o padrão de cores pode variar conforme o município. Consulte a Comlurb para orientações atualizadas.</em></p>
+      <img src="plasticos.png" class="lixeira-img" alt="Ícone de Plásticos">
     </div>
+  </div>
 
-    <div class="content-section">
-      <h3>Cooperativas de catadores</h3>
-      <p>
-        As <strong>cooperativas e associações de catadores</strong> desempenham um papel fundamental na gestão de resíduos e na 
-        economia circular. As unidades em questão são responsáveis pela triagem diária de grandes quantidades de materiais, 
-        contribuindo para a sustentabilidade urbana e promovendo a inclusão social de numerosas famílias cariocas.
-      </p>
+  <!-- Categoria: Vidro -->
+  <div class="card-lixeira border-verde">
+    <div class="lixeira-corpo">
+      <div class="lixeira-texto">
+        <div class="lixeira-header">
+          <span class="badge-cor bg-verde"></span>
+          <h4>Vidro</h4>
+        </div>
+        <p class="lixeira-descricao">Garrafas, potes de conserva, frascos e copos de vidro íntegros.</p>
+      </div>
+      <img src="vidros.png" class="lixeira-img" alt="Ícone de Vidros">
+    </div>
+  </div>
+
+  <!-- Categoria: Metal -->
+  <div class="card-lixeira border-amarela">
+    <div class="lixeira-corpo">
+      <div class="lixeira-texto">
+        <div class="lixeira-header">
+          <span class="badge-cor bg-amarela"></span>
+          <h4>Metal</h4>
+        </div>
+        <p class="lixeira-descricao">Latas de alumínio, tampas de garrafa, arames, pregos e ferragens.</p>
+      </div>
+      <img src="metal.png" class="lixeira-img" alt="Ícone de Metais">
+    </div>
+  </div>
+
+  <!-- Categoria: Papel e Papelão -->
+  <div class="card-lixeira border-azul">
+    <div class="lixeira-corpo">
+      <div class="lixeira-texto">
+        <div class="lixeira-header">
+          <span class="badge-cor bg-azul"></span>
+          <h4>Papel e Papelão</h4>
+        </div>
+        <p class="lixeira-descricao">Jornais, revistas, caixas de papelão corrugado, papéis de escritório e envelopes.</p>
+      </div>
+      <img src="papel.png" class="lixeira-img" alt="Ícone de Papel">
+    </div>
+  </div>
+
+  <!-- Categoria: Orgânico -->
+  <div class="card-lixeira border-marrom">
+    <div class="lixeira-corpo">
+      <div class="lixeira-texto">
+        <div class="lixeira-header">
+          <span class="badge-cor bg-marrom"></span>
+          <h4>Resíduos Orgânicos</h4>
+        </div>
+        <p class="lixeira-descricao">Restos de alimentos, cascas de frutas e vegetais, borra de café e podas de jardim.</p>
+      </div>
+      <img src="organicos.png" class="lixeira-img" alt="Ícone de Orgânicos">
+    </div>
+  </div>
+
+  <!-- Categoria: Perigosos -->
+  <div class="card-lixeira border-laranja">
+    <div class="lixeira-corpo">
+      <div class="lixeira-texto">
+        <div class="lixeira-header">
+          <span class="badge-cor bg-laranja"></span>
+          <h4>Perigosos</h4>
+        </div>
+        <p class="lixeira-descricao">Pilhas, baterias portáteis, eletroeletrônicos e componentes de descarte especial.</p>
+      </div>
+      <img src="pilhas.png" class="lixeira-img" alt="Ícone de Perigosos">
+    </div>
+  </div>
+
+  <!-- Categoria: Infectante -->
+  <div class="card-lixeira border-infectante">
+    <div class="lixeira-corpo">
+      <div class="lixeira-texto">
+        <div class="lixeira-header">
+          <span class="badge-cor bg-infectante"></span>
+          <h4>Infectante</h4>
+        </div>
+        <p class="lixeira-descricao">Resíduos de serviços de saúde, curativos e materiais com risco biológico potencial.</p>
+      </div>
+      <img src="infectante.png" class="lixeira-img" alt="Ícone de Infectantes">
+    </div>
+  </div>
+
+  <div class="card-lixeira border-nao">
+    <div class="lixeira-corpo">
+      <div class="lixeira-texto">
+        <div class="lixeira-header">
+          <span class="badge-cor bg-nao"></span>
+          <h4>Não Recicláveis</h4>
+        </div>
+        <p class="lixeira-descricao">Papéis sanitários, fotografias, espelhos quebrados, esponjas de cozinha e cerâmicas.</p>
+      </div>
+      <img src="naoreciclavel.png" class="lixeira-img" alt="Ícone de Rejeitos">
+    </div>
+  </div>
+
+</div> <!-- ATENÇÃO: Esta linha fecha a grade das lixeiras e joga o conteúdo abaixo para a largura total da página! -->
+
+<!-- SEÇÃO INDEPENDENTE: COOPERATIVAS DE CATADORES -->
+<div class="content-section">
+  <h3>Cooperativas de catadores</h3>
+  <p>
+    As <strong>cooperativas e associações de catadores</strong> desempenham um papel fundamental na gestão de resíduos e na 
+    economia circular. As unidades em questão são responsáveis pela triagem diária de grandes quantidades de materiais, 
+    contribuindo para a sustentabilidade urbana e promovendo a inclusão social de numerosas famílias cariocas [Comlurb].
+  </p>
+  <ul>
+    <li><strong>Coopama (Cooperativa Popular Amigos do Meio Ambiente):</strong> Localizada em Maria da Graça (Zona Norte), é uma das maiores da cidade.</li>
+    <li><strong>Cooperativas locais:</strong> São inúmeras associações em atividade em bairros e feiras de recicláveis [Comlurb].</li>
+    <li><strong>Diretrizes da Política Nacional de Resíduos Sólidos (Lei nº 12.305/2010):</strong>
       <ul>
-        <li><strong>Coopama (Cooperativa Popular Amigos do Meio Ambiente):</strong>Localizada em Maria da Graça (Zona Norte), é uma das maiores da cidade.</li>
-        <li><strong>Cooperativas locais:</strong> São inúmeras associações em atividade em bairros e feiras de recicláveis.</li>
-        <li><strong><em>O reconhecimento da Política Nacional de Resíduos Sólidos (Lei 12.305/2010):Reconhecimento como Agentes:</strong></li>
-        <li><strong>Reconhecimento como Agentes:</strong>Reconhecimento como Agentes: A lei define a organização e o empoderamento dos catadores como fundamentais
-         para a gestão de resíduos no país.</li>
-         <li><strong><em>Inclusão na Coleta Seletiva: </em></strong>O Artigo 8º estabelece que os planos de coleta seletiva dos municípios devem priorizar a
-         participação de cooperativas ou outras formas de associação de catadores de materiais recicláveis.</li>
-         <li><strong><em>Prioridade de Financiamento:</em></strong> Os municípios que integram os catadores em suas ações têm 
-          prioridade no acesso a recursos federais para o setor de saneamento e resíduos.</li>
-        <li><strong><em>Dispensa de Licitação:</em></strong>A Lei de Licitações permite que as prefeituras contratem essas cooperativas diretamente
-         (sem concorrência pública) para realizar a coleta seletiva, facilitando a geração de renda.</li>
+        <li><strong>Reconhecimento como Agentes:</strong> A legislação nacional define a organização e o empoderamento dos catadores como fundamentais para a gestão integrada.</li>
+        <li><strong>Inclusão na Coleta Seletiva:</strong> O Artigo 8º estabelece que os planos municipais devem priorizar a participação de cooperativas ou outras associações de catadores formadas por pessoas físicas de baixa renda.</li>
+        <li><strong>Prioridade de Financiamento:</strong> Municípios que integram formalmente os catadores têm prioridade no acesso a recursos federais de saneamento.</li>
+        <li><strong>Dispensa de Licitação:</strong> Permite que prefeituras contratem essas cooperativas diretamente para triagem e coleta seletiva, facilitando a geração de renda.</li>
       </ul>
-    </div>
+    </li>
+  </ul>
+</div>
 
     <div class="content-section">
       <h3>Ecopontos e descarte correto</h3>
       <p>
-        Os <strong>ecopontos</strong> espaços públicos ou estruturas de entrega voluntária criados pelas prefeituras para a população descartar 
-        gratuitamente resíduos que não vão no lixo comum, como materiais recicláveis, móveis velhos, pequenos entulhos de obras e galhadas. 
-        O objetivo é evitar o descarte irregular em ruas e terrenos. 
-        A Comlurb mantém ecopontos espalhados pela cidade — consulte o site oficial endereços e horários atualizados.
+        Os <strong>ecopontos</strong> são espaços públicos de entrega voluntária criados para que a população descarte 
+        gratuitamente resíduos que não devem ser misturados ao lixo comum doméstico, como entulhos pequenos, móveis velhos e galhadas [Comlurb]. 
+        O objetivo é evitar o descarte irregular e mitigar impactos ambientais urbanos. A Comlurb mantém dezenas de ecopontos em operação pela cidade.
       </p>
+      
       <h3>O que NÃO deve ir para a reciclagem comum</h3>
       <ul>
-        <li><strong>Papéis e Embalagens que não vão para a Reciclagem</strong></li>
-        <li>Papel higiênico e guardanapos usados</li>
-        <li>Cupons fiscais e comprovantes de maquininha (papel térmico)</li>
-        <li>Embalagens metalizadas (como sacos de salgadinho)</li>
-        <li>Papel com verniz, adesivos ou fita crepe colada</li>
-        <li><strong>Plásticos e Metais Complexos</strong></li>
-        <li>Esponjas de limpeza e isopor muito sujo</li>
-        <li>Tubos de pasta de dente e refis metalizados</li>
-        <li>Cabos de panela ou plásticos que queimam no fogo (termofixos)</li>
-        <li>Esponjas de aço e grampos de grampeado</li>
-        <li><strong>Vidros Especiais e Outros Materiais</strong></li>
-        <li>Espelhos, cristais e cerâmicas (como pratos e xícaras)</li>
-        <li>Vidros de forno (tipo pirex) e lâmpadas</li>
-        <li>Pilhas, baterias e eletrônicos quebrados</li>
-        <li>Resíduos de banheiro, fraldas e absorventes</li>
+        <li><strong>Papéis e Embalagens Inadequados:</strong> Papel higiênico, guardanapos usados, cupons fiscais e comprovantes em papel térmico, embalagens metalizadas (como sacos de salgadinho), além de papéis com excesso de verniz ou fitas adesivas coladas.</li>
+        <li><strong>Plásticos e Metais Complexos:</strong> Esponjas de limpeza doméstica, tubos de pasta de dente, refis metalizados e cabos de panela feitos de plástico não reciclável de alta resistência (baquelite).</li>
       </ul>
     </div>
 
-    <div class="ods-section">
-      <h3>Reciclagem e ODS 12</h3>
-      <p>
-        A Meta 12.5 da ODS prevê reduzir substancialmente a geração de resíduos até 2030. 
-        A Meta 12.8 complementa essa ação ao garantir que a população tenha informação 
-        para adotar práticas sustentáveis — como separar o lixo e usar a coleta seletiva.
-      </p>
-      <span class="ods-meta">Metas 12.5 e 12.8 — ODS da ONU</span>
-    </div>
+    <section id="referencias" class="referencias-abnt">
+      <h3>Referências</h3>
+      <ul>
+        <li>
+          COMPANHIA MUNICIPAL DE LIMPEZA URBANA (COMLURB). <strong>Histórico da Coleta Seletiva no Município do Rio de Janeiro</strong>. Rio de Janeiro: Prefeitura do Rio de Janeiro, 2026. Disponível em: &lt;https://prefeitura.rio&gt;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          FEDERAÇÃO DAS INDÚSTRIAS DO ESTADO DO RIO DE JANEIRO (FIRJAN). <strong>Mapeamento de Recicláveis Pós-Consumo do Estado do Rio de Janeiro</strong>. Rio de Janeiro: Firjan, 2023. Disponível em: &lt;https://firjan.com.br&gt;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). <strong>Objetivos de Desenvolvimento Sustentável:</strong> ODS 12 - Consumo e Produção Responsáveis (Meta 12.8). Brasília: Ipea, 2024. Disponível em: &lt;https://ipea.gov.br;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Assegurar padrões de produção e de consumo sustentáveis:</strong> Meta 12.8. Nova York: ONU, 2015. Disponível em: &lt;https://un.org&gt;. Acesso em: 10 ago. 2026.
+        </li>
+      </ul>
+    </section>
   </main>
-
-  <footer>
-    <p>Trabalho Acadêmico — Resíduos Urbanos e Educação Ambiental na Sociedade Carioca</p>
-    <p>Tema: ODS 12.8 — Consumo e Produção Responsáveis</p>
-    <p><a href="https://sdgs.un.org/goals/goal12" target="_blank" rel="noopener">Saiba mais sobre a ODS 12 na ONU</a></p>
-  </footer>
-</body>
-</html>
+</div>
+<!-- SEÇÃO DE FECHAMENTO CONJUNTO REGULAMENTAR -->
+<footer id="rodape-marjorie-unidombosco">
+  <p class="linha-footer">Trabalho Acadêmico — Resíduos Urbanos e Educação Ambiental na Sociedade Carioca</p>
+  <p class="linha-footer"><strong>Desenvolvido por: Marjorie Toledo Rodrigues</strong> · Estudante de Ciência de Dados e Inteligência Artificial</p>
+  <p class="linha-footer">Centro Universitário Unidombosco</p>
+  <p class="linha-footer">Tema: ODS 12.8 — Consumo e Produção Responsáveis</p>
+  <p class="linha-footer" style="margin-bottom: 0 !important;">
+    <a href="https://un.org" target="_blank" rel="noopener">Saiba mais sobre a ODS 12 na ONU</a>
+  </p>
+</footer>
