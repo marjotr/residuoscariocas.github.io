@@ -5,29 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Resíduos urbanos e educação ambiental na sociedade carioca — ODS 12.8">
   <title>Resíduos Cariocas | Início</title>
-   <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">♻️</span>
-        <div class="logo-text">
-          <h1>Resíduos Cariocas</h1>
-          <span>Educação Ambiental · ODS 12.8</span>
-        </div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="ativo">Início</a></li>
-          <li><a href="residuos-urbanos.html">Resíduos Urbanos</a></li>
-          <li><a href="reciclagem-rj.html">Reciclagem no Rio</a></li>
-          <li><a href="educacao-ambiental.html">Educação Ambiental</a></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="header-inner"> <!-- Essa div é obrigatória para o menu ficar na horizontal! -->
+    <a href="index.html" class="logo">
+      <span class="logo-icon">♻️</span>
+      <div class="logo-text">
+        <h1>Resíduos Cariocas</h1>
+        <span>Educação Ambiental · ODS 12.8</span>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="residuos-urbanos.html">Resíduos Urbanos</a></li>
+        <li><a href="reciclagem-rj.html">Reciclagem no Rio</a></li>
+        <li><a href="educacao-ambiental.html">Educação Ambiental</a></li>
+        <li><a href="educacao-ambiental.html#metodologia-indicadores">Metodologia & Indicadores</a></li>
+        <li><a href="educacao-ambiental.html#propostas-intervencao">Propostas de Intervenção</a></li>
+      </ul>
+    </nav>
+  </div>
   </header>
 
   <section class="hero">
@@ -42,7 +44,7 @@
 
     <div class="content-section">
       <p>
-        A cidade do Rio de Janeiro produz milhares de toneladas de resíduos sólidos todos os dias. 
+        A cidade do Rio de Janeiro produz milhares de toneladas de resíduos sólidos todos os dias [Comlurb]. 
         Lidar com esse volume exige políticas públicas, infraestrutura de coleta, reciclagem e, 
         acima de tudo, <strong>educação ambiental</strong> para que cada cidadão carioca compreenda 
         seu papel na redução do lixo e na preservação do meio ambiente.
@@ -52,7 +54,7 @@
         <em>"Os Resíduos Urbanos e a Educação Ambiental na Sociedade Carioca"</em>, 
         alinhado à <strong>Meta 12.8 das ODS da ONU</strong>, que prevê garantir, até 2030, 
         que as pessoas tenham informação relevante e conscientização para o desenvolvimento 
-        sustentável e estilos de vida em harmonia com a natureza.
+        sustentável e estilos de vida em harmonia com a natureza [Ipea].
       </p>
     </div>
 
@@ -86,15 +88,15 @@
     <div class="info-grid">
       <div class="info-item">
         <span class="numero">~10 mil</span>
-        <span class="rotulo">toneladas de resíduos/dia no RJ (estimativa)</span>
+        <span class="rotulo">toneladas de resíduos/dia coletadas na cidade [Comlurb]</span>
       </div>
       <div class="info-item">
-        <span class="numero">4%</span>
-        <span class="rotulo">do lixo reciclado na cidade (média histórica)</span>
+        <span class="numero">11%</span>
+        <span class="rotulo">do potencial reciclável coletado seletivamente [Comlurb, Firjan]</span>
       </div>
       <div class="info-item">
         <span class="numero">2030</span>
-        <span class="rotulo">meta da ODS 12.8 para conscientização global</span>
+        <span class="rotulo">horizonte da ODS 12.8 para conscientização global [Ipea]</span>
       </div>
     </div>
 
@@ -102,17 +104,41 @@
       <h3>Por que a ODS 12.8 importa para o Rio?</h3>
       <p>
         Sem informação acessível e educação ambiental de qualidade, políticas de reciclagem 
-        e gestão de resíduos não alcançam seu potencial. A Meta 12.8 reconhece que 
-        mudanças de comportamento começam com consciência — e este site é um passo nessa direção.
+        e gestão de resíduos não alcançam seu potencial máximo. A Meta 12.8 reconhece que 
+        mudanças estruturais de comportamento começam com consciência — e este portal funciona como ferramenta pedagógica nesse sentido.
       </p>
       <span class="ods-meta">Meta 12.8 — ODS da ONU</span>
     </div>
+
+    <!-- SEÇÃO DE REFERÊNCIAS BIBLIOGRÁFICAS (ABNT) -->
+    <section id="referencias" class="referencias-abnt">
+      <h3>Referências</h3>
+      <ul>
+        <li>
+          COMPANHIA MUNICIPAL DE LIMPEZA URBANA (COMLURB). <strong>Histórico da Coleta Seletiva no Município do Rio de Janeiro</strong>. Rio de Janeiro: Prefeitura do Rio de Janeiro, 2026. Disponível em: &lt;https://prefeitura.rio&gt;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          FEDERAÇÃO DAS INDÚSTRIAS DO ESTADO DO RIO DE JANEIRO (FIRJAN). <strong>Mapeamento de Recicláveis Pós-Consumo do Estado do Rio de Janeiro</strong>. Rio de Janeiro: Firjan, 2023. Disponível em: &lt;https://firjan.com.br&gt;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). <strong>Objetivos de Desenvolvimento Sustentável:</strong> ODS 12 - Consumo e Produção Responsáveis (Meta 12.8). Brasília: Ipea, 2024. Disponível em: &lt;https://ipea.gov.br;. Acesso em: 10 ago. 2026.
+        </li>
+        <li>
+          ORGANIZAÇÃO DAS NAÇÕES UNIDAS (ONU). <strong>Assegurar padrões de produção e de consumo sustentáveis:</strong> Meta 12.8. Nova York: ONU, 2015. Disponível em: &lt;https://brasil.un.org&gt;. Acesso em: 10 ago. 2026.
+        </li>
+      </ul>
+    </section>
   </main>
 
-  <footer>
-    <p>Trabalho Acadêmico — Resíduos Urbanos e Educação Ambiental na Sociedade Carioca</p>
-    <p>Tema: ODS 12.8 — Consumo e Produção Responsáveis</p>
-    <p><a href="https://sdgs.un.org/goals/goal12" target="_blank" rel="noopener">Saiba mais sobre a ODS 12 na ONU</a></p>
-  </footer>
+<!-- SEÇÃO DE FECHAMENTO CONJUNTO REGULAMENTAR -->
+<footer id="rodape-marjorie-unidombosco">
+  <p class="linha-footer">Trabalho Acadêmico — Resíduos Urbanos e Educação Ambiental na Sociedade Carioca</p>
+  <p class="linha-footer"><strong>Desenvolvido por: Marjorie Toledo Rodrigues</strong> · Estudante de Ciência de Dados e Inteligência Artificial</p>
+  <p class="linha-footer">Centro Universitário Unidombosco</p>
+  <p class="linha-footer">Tema: ODS 12.8 — Consumo e Produção Responsáveis</p>
+  <p class="linha-footer" style="margin-bottom: 0 !important;">
+    <a href="https://un.org" target="_blank" rel="noopener">Saiba mais sobre a ODS 12 na ONU</a>
+  </p>
+</footer>
 </body>
 </html>

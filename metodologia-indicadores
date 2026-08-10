@@ -1,0 +1,69 @@
+<!-- SEÇÃO: METODOLOGIA & INDICADORES -->
+<section id="metodologia-indicadores" class="secao-academica">
+  <h2>Metodologia & Indicadores de Sustentabilidade</h2>
+  <p>
+    Esta pesquisa utilizou uma abordagem quanti-qualitativa por meio de levantamento documental. Foram confrontados os dados da coleta seletiva da <strong>Comlurb</strong> e o mapeamento de pós-consumo da <strong>Firjan</strong> com as metas estabelecidas pelo indicador 12.8 da ONU [Comlurb, Firjan].
+  </p>
+
+  <!-- Tabela de Indicadores Científicos -->
+  <div class="tabela-container">
+    <table>
+      <caption>Tabela 1: Panorama de Resíduos e Potencial de Reciclagem no Rio de Janeiro</caption>
+      <thead>
+        <tr>
+          <th>Indicador Analisado</th>
+          <th>Dado Atual (Média)</th>
+          <th>Meta ODS 12.8 / Diagnóstico</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Coleta Seletiva Mensal (Comlurb)</td>
+          <td>~ 5.700 toneladas</td>
+          <td>Representa apenas 11% do potencial real da cidade [Comlurb].</td>
+        </tr>
+        <tr>
+          <td>Descarte Inadequado em Aterros</td>
+          <td>89% dos recicláveis</td>
+          <td>Prejuízo econômico e sobrecarga ambiental severa [Firjan].</td>
+        </tr>
+        <tr>
+          <td>Cooperativas Apoiadas</td>
+          <td>29 cooperativas</td>
+          <td>Necessidade de triagem correta na origem pelos moradores [Comlurb].</td>
+        </tr>
+      </tbody>
+    </table>
+    <span class="fonte-academica">Fonte: Desenvolvido pelo autor com base em dados da Comlurb e Firjan [Comlurb, Firjan].</span>
+  </div>
+</section>
+
+<!-- SEÇÃO: PROPOSTAS DE INTERVENÇÃO -->
+<section id="propostas-intervencao" class="secao-academica fundo-suave">
+  <h2>Propostas de Intervenção e Ação Social</h2>
+  <p>
+    Para mitigar o deficit de informação identificado nos indicadores, propõem-se três eixos de intervenção prática aplicáveis ao município do Rio de Janeiro:
+  </p>
+
+  <!-- Cards de Propostas -->
+  <div class="cards-intervencao">
+    <div class="card-proposta">
+      <div class="card-numero">01</div>
+      <!-- Alterado para h4 para respeitar a hierarquia tipográfica serifada -->
+      <h4>Educação Ambiental de Base</h4>
+      <p>Implementação de gincanas de logística reversa nas escolas públicas estaduais e municipais, transformando colégios em ecopontos comunitários.</p>
+    </div>
+
+    <div class="card-proposta">
+      <div class="card-numero">02</div>
+      <h4>Direito à Informação Digital</h4>
+      <p>Ampliação das plataformas da Comlurb para notificar cidadãos sobre rotas, dias e horários exatos da coleta seletiva por bairro [Comlurb].</p>
+    </div>
+
+    <div class="card-proposta">
+      <div class="card-numero">03</div>
+      <h4>Inclusão Socioeconômica</h4>
+      <p>Campanhas focadas na separação correta na origem para otimizar o trabalho e a renda de mais de 450 famílias nas cooperativas cariocas [Comlurb].</p>
+    </div>
+  </div>
+</section>
