@@ -5,11 +5,11 @@
   --bg-alternativo: #f2e9f4;        
   --rosa-suave: #fbebf2;            
   --branco: #ffffff;
-  --texto-principal: #1f1a24;        
-  --texto-secundario: #5e5466;       
+  --texto-principal: #211521;        
+  --texto-secundario: #635466;       
   --rosa-tech: #d13b7d;              
   --azul-dados: #1066cc;             
-  --borda-suave: #e2d2e8;            
+  --borda-suave: #e8d2e8;            
   --fonte: "Gelasio", "Times New Roman", Times, Georgia, serif;
   --sombra: 0 4px 16px rgba(209, 59, 125, 0.06); 
   --raio: 8px;                                   
@@ -125,6 +125,22 @@ nav a:hover, nav a.ativo {
   border-bottom: 1px solid var(--borda-suave);
   padding: 5.5rem 1.5rem;
   text-align: center;
+} 
+/* Alvo ultra específico para garantir a cor branca em qualquer texto desta seção */
+section.hero.hero-educacao,
+section.hero.hero-educacao p,
+section.hero.hero-educacao span {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important; /* Força sistemas baseados em Chrome/Safari */
+    opacity: 1 !important;                       /* Desativa qualquer transparência herdada */
+}
+
+/* Ajustes de tamanho e espaçamento para o parágrafo secundário */
+section.hero.hero-educacao p {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important; /* Deixa a letra mais espessa/negrito para destacar no fundo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) !important; /* Sombra projetada mais forte */
+    margin-top: 20px !important;
 }
 
 .hero h2 {
@@ -239,7 +255,6 @@ main {
   text-decoration: underline !important;
 }
 
-/* Content sections */
 .content-section {
   background-color: var(--branco) !important;
   border-radius: var(--raio) !important;
@@ -652,13 +667,13 @@ footer a:hover {
    BLINDAGEM DO RODAPÉ CONJUNTO (Marjorie - Unidombosco)
    ========================================================================== */
 #rodape-marjorie-unidombosco {
-  background-color: #d13b7d !important; /* Seu Rosa Magenta Digital de destaque */
+  background-color: #d13b7d !important; /* Seu Rosa Magenta Digital de destaque <3 */
   text-align: center !important;
   padding: 3rem 1.5rem !important;
   margin-top: 4rem !important;
   width: 100% !important;
   display: block !important;
-  clear: both !important; /* Força o rodapé a ir para o final absoluto da página */
+  clear: both !important;
   box-sizing: border-box !important;
 }
 
