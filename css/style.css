@@ -1,15 +1,15 @@
 /* Resíduos Cariocas — Educação Ambiental & ODS 12.8 */
 
 :root {
-  --bg-principal: #faf6fb;          
-  --bg-alternativo: #f2e9f4;        
-  --rosa-suave: #fbebf2;            
+  --bg-principal: #FFF8FA;          
+  --bg-alternativo: #F5E9EE;        
+  --rosa-suave: #FBECEF;            
   --branco: #ffffff;
-  --texto-principal: #211521;        
-  --texto-secundario: #635466;       
-  --rosa-tech: #d13b7d;              
-  --azul-dados: #1066cc;             
-  --borda-suave: #e8d2e8;            
+  --texto-principal: #3F3540;        
+  --texto-secundario: #756572;       
+  --rosa-tech: #b85f93;              
+  --azul-dados: #718EAD;             
+  --borda-suave: #E8D5DC;            
   --fonte: "Gelasio", "Times New Roman", Times, Georgia, serif;
   --sombra: 0 4px 16px rgba(209, 59, 125, 0.06); 
   --raio: 8px;                                   
