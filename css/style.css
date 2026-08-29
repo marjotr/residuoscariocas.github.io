@@ -8,7 +8,7 @@
   --texto-principal: #3F3540;        
   --texto-secundario: #756572;       
   --rosa-tech: #b85f93;              
-  --azul-dados: #718EAD;             
+  --azul-dados: #97b7d9;             
   --borda-suave: #E8D5DC;            
   --fonte: "Gelasio", "Times New Roman", Times, Georgia, serif;
   --sombra: 0 4px 16px rgba(209, 59, 125, 0.06); 
@@ -158,20 +158,20 @@ section.hero.hero-educacao p {
 }
 
 .hero h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  color: var(--rosa-tech) !important;             
-  margin-bottom: 1rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  color: var(--rosa-tech) !important;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.2;
+  max-width: 850px;
+  margin: 0 auto 1.5rem;
 }
 
 
 .hero p {
-  font-size: 1.15rem;
-  max-width: 650px;
-  margin: 0 auto 1.5rem;
+  max-width: 760px;
+  margin: 0 auto 2.2rem;
   color: var(--texto-secundario) !important;
+  font-size: 1.08rem;
+  line-height: 1.8;
 }
 
 section.hero p {
@@ -690,7 +690,7 @@ footer a:hover {
    BLINDAGEM DO RODAPÉ CONJUNTO (Marjorie - Unidombosco)
    ========================================================================== */
 #rodape-marjorie-unidombosco {
-  background-color: #d13b7d !important; /* Seu Rosa Magenta Digital de destaque <3 */
+  background-color: #903877 !important; /* Seu Rosa Magenta Digital de destaque <3 */
   text-align: center !important;
   padding: 3rem 1.5rem !important;
   margin-top: 4rem !important;
@@ -708,7 +708,6 @@ footer a:hover {
 #rodape-marjorie-unidombosco * {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
-  text-fill-color: #ffffff !important;
   font-family: "Gelasio", "Times New Roman", serif !important;
 }
 
@@ -1205,42 +1204,4 @@ footer a:hover {
 }
 /* =========================
    DESTAQUE — RESÍDUO X REJEITO
-========================= */
-
-.destaque-conceito {
-  max-width: 1000px;
-
-  margin: 2rem auto 4rem;
-
-  padding: 0 1.5rem;
-}
-
-.destaque-conceito-conteudo {
-  background-color: var(--rosa-suave);
-
-  border-left: 5px solid var(--rosa-tech);
-
-  border-radius: var(--raio);
-
-  padding: 2rem 2.2rem;
-
-  box-shadow: var(--sombra);
-}
-
-.destaque-conceito h3 {
-  color: var(--rosa-tech);
-
-  font-size: 1.4rem;
-
-  line-height: 1.4;
-
-  margin-bottom: 0.8rem;
-}
-
-.destaque-conceito p {
-  color: var(--texto-secundario);
-
-  line-height: 1.7;
-
-  margin-bottom: 0;
 }
