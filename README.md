@@ -28,4 +28,4 @@ Se quiser baixar este projeto e rodar na sua máquina:
 
 ## 📄 Licença e Citação
 Este projeto está sob a licença [Centro Universitário Unidombosco]. Se este trabalho for útil para a sua pesquisa acadêmica, por favor, cite-o como:
-> *[TOLEDO RODRIGUES, Marjorie. Os Resíduos Urbanos e a Educação Ambietal. PIEX II (Graduação em Ciência de Dados e Inteligência Artificial) - Centro Universitário Unidombosco, Rio de Janeiro, 2026.]*
+> *[TOLEDO RODRIGUES, Marjorie. Descarte correto de resíduos e educação ambiental no Rio de Janeiro PIEX II (Graduação em Ciência de Dados e Inteligência Artificial) - Centro Universitário Unidombosco, Rio de Janeiro, 2026.]*
