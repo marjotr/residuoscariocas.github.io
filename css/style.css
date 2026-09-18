@@ -1,17 +1,17 @@
 /* Resíduos Cariocas — Educação Ambiental & ODS 12.8 */
 
 :root {
-  --bg-principal: #FFF8FA;          
-  --bg-alternativo: #F5E9EE;        
-  --rosa-suave: #FBECEF;            
-  --branco: #ffffff;
-  --texto-principal: #3F3540;        
-  --texto-secundario: #756572;       
-  --rosa-tech: #b85f93;              
-  --azul-dados: #97b7d9;             
-  --borda-suave: #E8D5DC;            
+  --bg-principal: #F4F9F6; /*Cor do fundo da página*/         
+  --bg-alternativo: #E3EFE9; /* Fundo secundário*/       
+  --rosa-suave: #EAF4EE; /* Fundo de seções/cards em destaque*/           
+  --branco: #ffffff; /*Cor branca para cards e elementos*/
+  --texto-principal: #1C2D27;  /*Cor do texto principal */       
+  --texto-secundario: #2D3A34; /*Cor de subtítulos e descrições*/      
+  --principal-destaque: #2E7D5B; /* Cor principal de destaque (títulos, botões, footer)*/             
+  --secundaria-destaque: #1D6B8A;  /* Cor secundária de destaque (detalhes e metas) */           
+  --borda-suave: #CCE2D7; /* Cor de bordas e divisores */           
   --fonte: "Gelasio", "Times New Roman", Times, Georgia, serif;
-  --sombra: 0 4px 16px rgba(209, 59, 125, 0.06); 
+  --sombra: 0 4px 16px rgba(46, 125, 91, 0.08); 
   --raio: 8px;                                   
 }
 
@@ -47,7 +47,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 3px solid var(--rosa-tech) !important; 
+  border-bottom: 3px solid var(--principal-destaque) !important; 
   box-shadow: var(--sombra);
   width: 100%;
 }
@@ -82,7 +82,7 @@ header {
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
 }
 
 .logo-text span {
@@ -112,7 +112,7 @@ nav a {
 }
 
 nav a:hover, nav a.ativo {
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
   background-color: var(--rosa-suave) !important; 
   font-weight: 600;
 }
@@ -123,8 +123,8 @@ nav a:hover, nav a.ativo {
 .hero {
   /* Mescla um fundo rosa translúcido com a foto da praia poluída */
   background: linear-gradient(
-    rgba(242, 233, 244, 0.85), 
-    rgba(251, 235, 242, 0.85)
+    rgba(227, 239, 233, 0.85), 
+    rgba(234, 244, 238, 0.85)
   ), url('../hero.jpg') center/cover no-repeat;
   border-bottom: 1px solid var(--borda-suave);
   padding: 5rem 1.5rem;
@@ -132,54 +132,27 @@ nav a:hover, nav a.ativo {
 }
 /* Ajuste de contraste e legibilidade para a seção Hero */
 section.hero.hero-educacao h2 {
-    color: var(--rosa-tech) !important;
-    -webkit-text-fill-color: var(--rosa-tech) !important;
+    color: var(--principal-destaque) !important;
+    -webkit-text-fill-color: var(--principal-destaque) !important;
     text-shadow: none !important;
     filter: none !important;
 }
 
-section.hero.hero-educacao p,
-section.hero.hero-educacao span {
-    color: #8C3061 !important; /* Tom framboesa escuro, mais alegre e nítido */
-    -webkit-text-fill-color: #8C3061 !important;
-    text-shadow: none !important;
-    filter: none !important; /* Remove o sombreado fantasma */
-    font-size: 1.15rem !important;
-    font-weight: 500 !important;
-    margin-top: 15px !important;
-}
 
-/* Ajustes de tamanho e espaçamento para o parágrafo secundário */
-section.hero.hero-educacao p {
-    font-size: 1.25rem !important;
-    font-weight: 600 !important; /* Deixa a letra mais espessa/negrito para destacar no fundo */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) !important; /* Sombra projetada mais forte */
-    margin-top: 20px !important;
-}
-
+/* ✅ NOVO CÓDIGO PADRONIZADO COM A PALETA VERDE */
 .hero h2 {
-  color: var(--rosa-tech) !important;
-  font-size: clamp(2rem, 4.5vw, 3rem);
-  line-height: 1.2;
-  max-width: 850px;
-  margin: 0 auto 1.5rem;
+    color: var(--principal-destaque) !important;
+    -webkit-text-fill-color: var(--principal-destaque) !important;
+    text-shadow: none !important;
+    filter: none !important;
 }
 
-
-.hero p {
-  max-width: 760px;
-  margin: 0 auto 2.2rem;
-  color: var(--texto-secundario) !important;
-  font-size: 1.08rem;
-  line-height: 1.8;
-}
-
-section.hero p {
-  text-shadow: none !important;
-  color: #7A2251 !important;
-  -webkit-text-fill-color: #7A2251 !important;
-  font-size: 1.15rem !important;
-  font-weight: 500 !important;
+.hero p,
+.hero span {
+    color: var(--texto-secundario) !important;
+    -webkit-text-fill-color: var(--texto-secundario) !important;
+    text-shadow: none !important;
+    filter: none !important;
 }
 
 .ods-badge {
@@ -187,13 +160,13 @@ section.hero p {
   align-items: center;
   gap: 0.5rem;
   background: var(--branco);
-  color: var(--azul-dados) !important;
+  color: var(--secundaria-destaque) !important;
   padding: 0.5rem 1.25rem;
   border-radius: var(--raio);
   font-weight: 600;
   font-size: 0.9rem;
   box-shadow: var(--sombra);
-  border: 1px solid var(--rosa-tech); 
+  border: 1px solid var(--principal-destaque); 
 }
 
 /* Layout */
@@ -205,9 +178,9 @@ main {
 
 .page-title {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
   margin-bottom: 0.5rem;
-  border-left: 5px solid var(--azul-dados) !important; 
+  border-left: 5px solid var(--secundaria-destaque) !important; 
   padding-left: 1rem;
 }
 
@@ -234,7 +207,7 @@ main {
   padding: 1.75rem !important;
   box-shadow: var(--sombra) !important;
   border: 1px solid var(--borda-suave) !important;
-  border-top: 4px solid var(--rosa-tech) !important; 
+  border-top: 4px solid var(--principal-destaque) !important; 
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
@@ -243,18 +216,20 @@ main {
 
 .card:hover {
   transform: translateY(-4px) !important;
-  box-shadow: 0 8px 24px rgba(209, 59, 125, 0.12) !important; 
+  /* Sombreamento suave em tom verde escuro (#2E7D5B) ao passar o mouse */
+  box-shadow: 0 8px 24px rgba(46, 125, 91, 0.15) !important; 
 }
 
 .card-icon {
   font-size: 2.5rem !important;
   margin-bottom: 0.75rem !important;
   display: block !important;
-  filter: drop-shadow(0 2px 4px rgba(209, 59, 125, 0.15));
+  /* Sombra projetada nos ícones combinando com a paleta ecológica */
+  filter: drop-shadow(0 2px 4px rgba(46, 125, 91, 0.20));
 }
 
 .card h3 {
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
   margin-bottom: 0.6rem !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
@@ -268,7 +243,7 @@ main {
 }
 
 .card a {
-  color: var(--azul-dados) !important;
+  color: var(--secundaria-destaque) !important;
   font-weight: 600 !important;
   text-decoration: none !important;
   margin-top: auto !important; 
@@ -292,7 +267,7 @@ main {
 }
 
 .content-section h3 {
-  color: var(--azul-dados) !important; 
+  color: var(--secundaria-destaque) !important; 
   margin: 1.5rem 0 0.75rem !important;
   font-size: 1.25rem !important;
   font-weight: 700 !important;
@@ -314,7 +289,7 @@ main {
 
 .highlight-box {
   background: linear-gradient(90deg, var(--bg-alternativo) 0%, var(--branco) 100%) !important;
-  border-left: 4px solid var(--rosa-tech) !important;
+  border-left: 4px solid var(--principal-destaque) !important;
   padding: 1.25rem 1.5rem !important;
   border-radius: 0 var(--raio) var(--raio) 0 !important;
   margin: 1.5rem 0 !important;
@@ -322,7 +297,7 @@ main {
 }
 
 .highlight-box strong {
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
 }
 
 /* ==========================================================================
@@ -339,7 +314,7 @@ main {
   background-color: var(--branco) !important;
   padding: 1.5rem !important;
   border-radius: var(--raio) !important;
-  border: 1px solid var(--rosa-tech) !important; 
+  border: 1px solid var(--principal-destaque) !important; 
   box-shadow: var(--sombra) !important;
   text-align: center !important;
   display: flex !important;
@@ -350,7 +325,7 @@ main {
 .info-item .numero {
   font-size: 2.2rem !important;
   font-weight: 700 !important;
-  color: var(--rosa-tech) !important; 
+  color: var(--principal-destaque) !important; 
   display: block !important;
   line-height: 1.2 !important;
   margin-bottom: 0.4rem !important;
@@ -363,7 +338,7 @@ main {
 }
 
 .ods-section {
-  background: linear-gradient(135deg, #f2e9f4 0%, var(--rosa-suave) 100%) !important;
+  background: linear-gradient(135deg, #e9f4eb 0%, var(--rosa-suave) 100%) !important;
   color: var(--texto-principal) !important;
   border: 1px solid var(--borda-suave) !important;
   border-radius: var(--raio) !important;
@@ -373,7 +348,7 @@ main {
 }
 
 .ods-section h3 {
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
   font-size: 1.5rem !important;
   margin-bottom: 1rem !important;
   font-weight: 700 !important;
@@ -387,7 +362,7 @@ main {
 
 .ods-meta {
   display: inline-block !important;
-  background-color: var(--azul-dados) !important; 
+  background-color: var(--secundaria-destaque) !important; 
   color: var(--branco) !important;        
   padding: 0.5rem 1.25rem !important;
   border-radius: var(--raio) !important;  
@@ -406,7 +381,7 @@ main {
 }
 
 .secao-academica h2 {
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
   font-size: 1.5rem;
   border-bottom: 1px solid var(--borda-academica);
   padding-bottom: 8px;
@@ -437,7 +412,7 @@ caption {
 }
 
 th {
-  background-color: var(--rosa-tech) !important;
+  background-color: var(--principal-destaque) !important;
   color: var(--branco) !important;
   padding: 12px 15px;
   font-size: 0.9rem;
@@ -472,7 +447,7 @@ tr:nth-child(even) {
 .card-proposta {
   background-color: var(--branco);
   border: 1px solid var(--borda-suave);
-  border-top: 4px solid var(--azul-dados) !important;
+  border-top: 4px solid var(--secundaria-destaque) !important;
   padding: 22px;
   border-radius: var(--raio);
   position: relative;
@@ -482,7 +457,7 @@ tr:nth-child(even) {
 .card-numero {
   font-size: 2.2rem;
   font-weight: 800;
-  color: rgba(16, 102, 204, 0.12) !important;
+  color: rgba(16, 132, 204, 0.12) !important;
   position: absolute;
   top: 10px;
   right: 15px;
@@ -491,7 +466,7 @@ tr:nth-child(even) {
 
 .card-proposta h4, 
 .card-proposta h3 {
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
   font-size: 1.15rem;
   font-weight: 700;
   margin-top: 0;
@@ -528,7 +503,7 @@ tr:nth-child(even) {
 
 .card-lixeira:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(162, 75, 122, 0.06);
+  box-shadow: 0 6px 16px rgba(75, 123, 162, 0.06);
 }
 
 .lixeira-corpo {
@@ -637,7 +612,7 @@ footer strong {
 }
 
 footer {
-  background-color: var(--rosa-tech) !important;
+  background-color: var(--principal-destaque) !important;
   text-align: center;
   padding: 3rem 1.5rem;
   margin-top: 4rem;
@@ -690,7 +665,7 @@ footer a:hover {
    BLINDAGEM DO RODAPÉ CONJUNTO (Marjorie - Unidombosco)
    ========================================================================== */
 #rodape-marjorie-unidombosco {
-  background-color: #903877 !important; /* Seu Rosa Magenta Digital de destaque <3 */
+  background-color: var(--principal-destaque) !important;
   text-align: center !important;
   padding: 3rem 1.5rem !important;
   margin-top: 4rem !important;
@@ -726,20 +701,20 @@ footer a:hover {
 #rodape-marjorie-unidombosco a:hover {
   opacity: 0.85 !important;
 }
-/* ========================= HERO ========================= */
-
-.hero {
+/* ==========================================================================
+   HERO CONSOLIDADO (Paleta Verde Sustentável)
+   ========================================================================== */
+.hero,
+section.hero,
+section.hero.hero-educacao {
   background: linear-gradient(
     135deg,
-    #f2e9f4 0%,
-    #fbebf2 100%
-  );
-
-  border-bottom: 1px solid var(--borda-suave);
-
-  padding: 5rem 1.5rem;
-
-  text-align: center;
+    var(--bg-alternativo) 0%,
+    var(--rosa-suave) 100%
+  ) !important;
+  border-bottom: 1px solid var(--borda-suave) !important;
+  padding: 5rem 1.5rem !important;
+  text-align: center !important;
 }
 
 .hero-content {
@@ -749,40 +724,43 @@ footer a:hover {
 
 .hero-label {
   display: inline-block;
-
-  color: var(--rosa-tech);
-
+  color: var(--principal-destaque) !important;
   font-size: 0.85rem;
   font-weight: 700;
-
   letter-spacing: 2px;
-
   margin-bottom: 1rem;
 }
 
-.hero h2 {
-  color: var(--rosa-tech) !important;
-
-  font-size: clamp(2rem, 5vw, 3.2rem);
-
-  line-height: 1.2;
-
-  max-width: 850px;
-
-  margin: 0 auto 1.5rem;
+/* Título Verde */
+.hero h2,
+section.hero h2,
+section.hero.hero-educacao h2 {
+  color: var(--principal-destaque) !important;
+  -webkit-text-fill-color: var(--principal-destaque) !important;
+  font-size: clamp(2rem, 5vw, 3.2rem) !important;
+  line-height: 1.2 !important;
+  max-width: 850px !important;
+  margin: 0 auto 1.5rem !important;
+  text-shadow: none !important;
+  filter: none !important;
 }
 
-.hero p {
-  max-width: 720px;
-
-  margin: 0 auto 2rem;
-
+/* Texto de Descrição */
+.hero p,
+.hero span,
+section.hero p
+section.hero span,
+section.hero.hero-educacao p,
+section.hero.hero-educacao span {
   color: var(--texto-secundario) !important;
-
-  font-size: 1.1rem;
+  -webkit-text-fill-color: var(--texto-secundario) !important;
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
+  max-width: 720px !important;
+  margin: 0 auto 2rem !important;
+  text-shadow: none !important;
+  filter: none !important;
 }
-
-
 /* =========================
    BOTÕES
 ========================= */
@@ -802,7 +780,7 @@ footer a:hover {
 .botao {
   display: inline-block;
 
-  background-color: var(--rosa-tech);
+  background-color: var(--principal-destaque);
 
   color: var(--branco) !important;
 
@@ -818,7 +796,7 @@ footer a:hover {
 }
 
 .botao:hover {
-  background-color: #a94f83;
+  background-color: var(--principal-destaque);
 
   transform: translateY(-2px);
 
@@ -830,13 +808,13 @@ footer a:hover {
 
   background-color: var(--branco);
 
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
 
   padding: 0.75rem 1.4rem;
 
   border-radius: var(--raio);
 
-  border: 1px solid var(--rosa-tech);
+  border: 1px solid var(--principal-destaque);
 
   font-weight: 700;
 
@@ -871,7 +849,7 @@ footer a:hover {
 .section-label {
   display: inline-block;
 
-  color: var(--rosa-tech);
+  color: var(--principal-destaque);
 
   font-size: 0.8rem;
 
@@ -883,7 +861,7 @@ footer a:hover {
 }
 
 .introducao h2 {
-  color: var(--rosa-tech);
+  color: var(--principal-destaque);
 
   font-size: clamp(1.6rem, 3vw, 2.2rem);
 
@@ -915,7 +893,7 @@ footer a:hover {
 }
 
 .section-heading h2 {
-  color: var(--rosa-tech);
+  color: var(--principal-destaque);
 
   font-size: clamp(1.6rem, 3vw, 2.2rem);
 
@@ -959,7 +937,7 @@ footer a:hover {
 }
 
 .card h3 {
-  color: var(--rosa-tech) !important;
+  color: var(--principal-destaque) !important;
 }
 
 .card p {
@@ -1017,7 +995,7 @@ footer a:hover {
 
   background: linear-gradient(
     135deg,
-    #f2e9f4 0%,
+    #e9f4eb 0%,
     var(--rosa-suave) 100%
   );
 
@@ -1037,7 +1015,7 @@ footer a:hover {
 }
 
 .ods-text h2 {
-  color: var(--rosa-tech);
+  color: var(--principal-destaque);
 
   font-size: clamp(1.7rem, 3vw, 2.4rem);
 
@@ -1102,7 +1080,7 @@ footer a:hover {
 }
 
 .chamada h2 {
-  color: var(--rosa-tech);
+  color: var(--principal-destaque);
 
   font-size: clamp(1.7rem, 4vw, 2.5rem);
 
